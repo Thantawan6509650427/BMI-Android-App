@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- หัวข้อ -->
+        <TextView
+            android:id="@+id/textHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            style="@style/HeadTextStyle"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"/>
+
+        <!-- น้ำหนัก -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/textWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_label"
+                style="@style/LabelTextStyle"
+                android:textColor="@color/primary_text"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/hint"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        </LinearLayout>
+
+        <!-- ส่วนสูง -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height_label"
+                style="@style/LabelTextStyle"
+                android:textColor="@color/primary_text"
+                android:layout_marginEnd="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:gravity="center"
+                android:hint="@string/height_hint"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/hint"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        </LinearLayout>
+
+        <!-- แสดงค่า BMI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/textBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmi_label"
+                style="@style/LabelTextStyle"
+                android:textColor="@color/primary_text"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/textBMIDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/secondary_text"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/display_background"/>
+        </LinearLayout>
+
+        <!-- ระดับความเสี่ยง -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textRisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/risk_label"
+                style="@style/LabelTextStyle"
+                android:textColor="@color/primary_text"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/textRiskDisplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/secondary_text"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/display_background"/>
+        </LinearLayout>
+
+        <!-- ปุ่มคำนวณ -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            style="@style/HeadTextStyle"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/button_color"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"/>
+    </LinearLayout>
+</ScrollView>

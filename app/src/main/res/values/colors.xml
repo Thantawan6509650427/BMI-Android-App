@@ -1,0 +1,18 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_color">#6200EE</color>
+    <color name="button_color">#6200EE</color>
+    <color name="button_pressed_color">#3700B3</color>
+    <color name="stroke_color">#CCCCCC</color>
+    <color name="background_color">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="hint">#A0A0A0</color>
+
+    <!-- Risk Colors -->
+    <color name="low_risk">#4CAF50</color> <!-- สีเขียว -->
+    <color name="normal_risk">#FFC107</color> <!-- สีเหลือง -->
+    <color name="high_risk">#F44336</color> <!-- สีแดง -->
+</resources>

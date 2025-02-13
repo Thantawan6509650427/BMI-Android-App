@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">เครื่องคิดเลข BMI</string>
+    <string name="weight_label">น้ำหนัก (กก.):</string>
+    <string name="height_label">ส่วนสูง (ซม.):</string>
+    <string name="bmi_label">BMI:</string>
+    <string name="risk_label">ระดับความเสี่ยง:</string>
+    <string name="calculate">คำนวณ</string>
+    <string name="low_risk">น้ำหนักน้อย</string>
+    <string name="normal_risk">น้ำหนักปกติ</string>
+    <string name="high_risk">น้ำหนักเกิน</string>
+    <string name="weight_hint">กรุณาใส่น้ำหนักของคุณ</string>
+    <string name="height_hint">กรุณาใส่ส่วนสูงของคุณ</string>
+</resources>

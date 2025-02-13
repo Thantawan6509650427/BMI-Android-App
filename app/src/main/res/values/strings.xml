@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="weight_label">Weight (kg):</string>
+    <string name="height_label">Height (cm):</string>
+    <string name="bmi_label">BMI:</string>
+    <string name="risk_label">Risk Level:</string>
+    <string name="calculate">Calculate</string>
+    <string name="low_risk">Underweight</string>
+    <string name="normal_risk">Normal weight</string>
+    <string name="high_risk">Overweight</string>
+    <string name="weight_hint">Enter your weight</string>
+    <string name="height_hint">Enter your height</string>
+</resources>
